@@ -11,8 +11,9 @@ Preconditions :	Customer and identification history, against which it will be va
 Postconditions :	Customer is identified
                   Access to the related account is granted
                   Functionalities are provided based on his previously saved settings
-Flow of activities :	          Actor                                 	                  System
-                      Customer visits a Point of Sale                   System looks up for the matching record/data in the backend
+Flow of activities |	          Actor              |                   	                  System
+-------------------------------------------------------------------------------------------------------------
+                    |  Customer visits a Point of Sale             |      System looks up for the matching record/data in the backend
                       (POS) and requests login authentication           database and validates the obtained facial imagery against it
                        
 
