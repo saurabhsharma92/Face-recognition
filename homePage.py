@@ -45,21 +45,21 @@ class homePage:
         self.root.title("Face Recognition")
         helv36 = tf.Font(family='Helvetica', size=36)
 
-        self.root = Frame(self.root, width=1800, height=1800, bg="grey")
-        header = Label(self.root, text="Delaware North", bg="blue", fg="white", font=helv36)
-        msg = Label(self.root, text="Welcome !! " + customer_name, bg="blue", fg="white")
-        history = Label(self.root, text="Last time you were here. You ordered Kingfisher Beer", bg="white", fg="black")
-        yes_button = Button(self.root, text="Order", fg="black", command=homePage().ordersuccess)
-        no_button = Button(self.root, text="Cancel", fg="black", command=homePage().orderfailure)
+        frame = Frame(self.root, width=1800, height=1800, bg="grey")
+        header = Label(frame, text="Delaware North", bg="blue", fg="white", font=helv36)
+        msg = Label(frame, text="Welcome !! " + customer_name, bg="blue", fg="white")
+        history = Label(frame, text="Last time you were here. You ordered Kingfisher Beer", bg="white", fg="black")
+        yes_button = Button(frame, text="Order", fg="black", command=homePage().ordersuccess)
+        no_button = Button(frame, text="Cancel", fg="black", command=homePage().orderfailure)
 
 
         # ************* Tool Bar ****************
-        toolbar = Frame(self.root, bg="green", )
+        toolbar = Frame(frame, bg="green", )
         toolbarkingfisher = Button(toolbar, text="Kingfisher", command=homePage().kingfisher)
         toolbarwater = Button(toolbar, text="Water", command=homePage().water)
         toolbarchips = Button(toolbar, text="Chips", command=homePage().chips)
 
-        self.root.grid(row=0)
+        frame.grid(row=0)
         header.grid(row=1, columnspan=4, pady=20)
         msg.grid(row=2, columnspan=4, pady=10)
         history.grid(row=3, columnspan=3, pady=10, padx=20)
