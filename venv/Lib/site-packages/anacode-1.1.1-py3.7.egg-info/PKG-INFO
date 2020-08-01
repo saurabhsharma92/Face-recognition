@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: anacode
+Version: 1.1.1
+Summary: Anacode API querying and aggregation library
+Home-page: https://github.com/anacode/anacode-toolkit
+Author: Tomas Stibrany
+Author-email: tomas.stibrany@anacode.de
+License: BSD-3-Clause
+Download-URL: https://github.com/anacode/anacode-toolkit/tarball/v1.1.1
+Description: UNKNOWN
+Keywords: anacode,nlp,chinese
+Platform: UNKNOWN
