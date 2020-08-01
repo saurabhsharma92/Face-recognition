@@ -1,5 +1,5 @@
-from tkinter import *
 import tkfontchooser as tf
+from tkinter import *
 
 
 class homePage:
@@ -78,12 +78,14 @@ class homePage:
         msg = Label(frame, text="Welcome " + customer_name, fg="black", font=helv24)
         #mi = PhotoImage('Saurabh_Sharma.jpg')
         #tmi = mi.subsample(6,6)
-        if(customer_name == "Saurabh Sharma"):
+        if customer_name == "Saurabh Sharma":
             history = Label(frame, text="Last time you were here. You ordered Coke and Popcorn", bg="white", fg="black", font=helv22)
-        elif(customer_name == "Disha Shetty"):
+        elif customer_name == "Disha Shetty":
             history = Label(frame, text="Last time you were here. You ordered Coke and Pizza Slice", bg="white", fg="black", font=helv22)
-        elif (customer_name == "Disha Shetty"):
+        elif customer_name == "Brian Alessi":
             history = Label(frame, text="Last time you were here. You ordered Coke and Pizza Slice", bg="white", fg="black", font=helv22)
+        elif customer_name == "Rupam":
+            history = Label(frame, text="Last time you were here. You ordered Soda Pop and Pretzel", bg="white", fg="black", font=helv22)
         else:
             history = Label(frame, text="Last time you were here. You ordered Blue Light and Popcorn", bg="white",fg="black", font=helv22)
         current = Label(frame, text="What would you like to have today?", bg="white", fg="black", font=helv22)

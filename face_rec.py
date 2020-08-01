@@ -1,30 +1,31 @@
-import face_recognition
 import cv2
-from homePage import homePage
 import easygui
+import face_recognition
 
+from homePage import homePage
 
+#video_capture = cv2.VideoCapture(0)
 video_capture = cv2.VideoCapture(0)
 saurabh_image = face_recognition.load_image_file("Saurabh_Sharma.jpg")
 saurabh_face_encoding = face_recognition.face_encodings(saurabh_image)[0]
-varsha_image = face_recognition.load_image_file("varsha.jpeg")
-varsha_face_encoding = face_recognition.face_encodings(varsha_image)[0]
-disha_image = face_recognition.load_image_file("disha.jpg")
-disha_face_encoding = face_recognition.face_encodings(disha_image)[0]
+brian_image = face_recognition.load_image_file("brian.jpeg")
+brian_face_encoding = face_recognition.face_encodings(brian_image)[0]
+#disha_image = face_recognition.load_image_file("disha.jpg")
+#disha_face_encoding = face_recognition.face_encodings(disha_image)[0]
 rupam_image = face_recognition.load_image_file("rupam.jpeg")
 rupam_face_encoding = face_recognition.face_encodings(rupam_image)[0]
+#sam_image = face_recognition.load_image_file("Sam.jpg")
+#sam_face_encoding = face_recognition.face_encodings(sam_image)[0]
 
 known_face_encodings = [
     saurabh_face_encoding,
-    varsha_face_encoding,
-    disha_face_encoding,
+    brian_face_encoding,
     rupam_face_encoding
 ]
 known_face_names = [
     "Saurabh Sharma",
-    "Varsha Anandani",
-    "Disha Shetty",
-    "Rupam"
+    "Brian Alessi",
+    "Rupam",
 ]
 
 # Initialize some variables

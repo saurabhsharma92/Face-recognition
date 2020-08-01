@@ -1,5 +1,5 @@
-import face_recognition
 import cv2
+import face_recognition
 
 video_capture = cv2.VideoCapture(0)
 disha_image = face_recognition.load_image_file("disha.jpg")
