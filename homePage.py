@@ -105,7 +105,7 @@ class homePage:
         yes_button = Button(toolbarButton, bg="#9FA0A3", text="Order", fg="black", width=10, height=3, font=helv16, command=homePage().ordersuccess)
         no_button = Button(toolbarButton, bg="#9FA0A3", text="Cancel", fg="black", width=10, height=3, font=helv16, command=homePage().orderfailure)
 
-        # ************* Building Grid *****************
+        # ************* Building Grid ******************
         frame.grid(sticky=N+S+W+E)
         header.grid(row=0, sticky=W+E)
         msg.grid(row=1, pady=30)
