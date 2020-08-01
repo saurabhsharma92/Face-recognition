@@ -1,6 +1,7 @@
 # Face-recognition
 
 Reference Document
+  * https://pypi.org/project/face-recognition/
   * https://medium.com/@aadimator/how-to-set-up-opencv-in-intellij-idea-6eb103c1d45c#:~:text=Click%20the%20%2B%20icon%20on%20the,the%20Add%20Jar%2FDirectory%20option.&text=Then%20browse%20to%20the%20path,jar%20and%20click%20OK.
   * Python Interpreter - https://www.jetbrains.com/help/idea/configuring-local-python-interpreters.html
   * Install OpenCV python in Windows - https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_setup/py_setup_in_windows/py_setup_in_windows.html
