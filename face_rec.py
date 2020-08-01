@@ -3,9 +3,10 @@ import easygui
 import face_recognition
 
 from homePage import homePage
-
-#video_capture = cv2.VideoCapture(0)
+#Use this if using Laptop's camera
 video_capture = cv2.VideoCapture(0)
+#Use this if you are using external camera
+#video_capture = cv2.VideoCapture(1)
 saurabh_image = face_recognition.load_image_file("Saurabh_Sharma.jpg")
 saurabh_face_encoding = face_recognition.face_encodings(saurabh_image)[0]
 brian_image = face_recognition.load_image_file("brian.jpeg")
